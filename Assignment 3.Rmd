@@ -1,0 +1,28 @@
+---
+title: "Assignment 3 - Plotly"
+author: "Lorenzo A Sanchez"
+date: "September 26, 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Slide with Plot: 
+
+###MPG by Displacement by Acceleration
+
+```{r, message=FALSE, warning=FALSE}
+library(plotly); data(mtcars)
+```
+
+```{r}
+plot_ly(data = mtcars,  x = mtcars$disp, y = mtcars$mpg, z = mtcars$qsec, type = "scatter3d", mode = 'markers') 
+```
+
+
+
+## The End
+
